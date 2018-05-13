@@ -1,12 +1,17 @@
 {
-  "main.css": "static/css/main.888fa7d6.css",
-  "main.css.map": "static/css/main.888fa7d6.css.map",
-  "main.js": "static/js/main.e2a93086.js",
-  "main.js.map": "static/js/main.e2a93086.js.map",
+  "main.css": "static/css/main.97c56232.css",
+  "main.css.map": "static/css/main.97c56232.css.map",
+  "main.js": "static/js/main.e8bca73c.js",
+  "main.js.map": "static/js/main.e8bca73c.js.map",
   "static/media/1-tree-new.png": "static/media/1-tree-new.346c86eb.png",
   "static/media/2-map_2.png": "static/media/2-map_2.bec81a4c.png",
   "static/media/4-voiceacting.png": "static/media/4-voiceacting.50cfd48a.png",
   "static/media/appstore.svg": "static/media/appstore.2928664f.svg",
+  "static/media/glyphicons-halflings-regular.eot": "static/media/glyphicons-halflings-regular.f4769f9b.eot",
+  "static/media/glyphicons-halflings-regular.svg": "static/media/glyphicons-halflings-regular.89889688.svg",
+  "static/media/glyphicons-halflings-regular.ttf": "static/media/glyphicons-halflings-regular.e18bbf61.ttf",
+  "static/media/glyphicons-halflings-regular.woff": "static/media/glyphicons-halflings-regular.fa277232.woff",
+  "static/media/glyphicons-halflings-regular.woff2": "static/media/glyphicons-halflings-regular.448c34a5.woff2",
   "static/media/google-play-store-badge-2.png": "static/media/google-play-store-badge-2.db9b21a1.png",
   "static/media/words.png": "static/media/words.e5d51cef.png"
 }
