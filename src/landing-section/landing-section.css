@@ -1,0 +1,65 @@
+.img-responsive {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+@media (max-width: 991px) {
+
+.img-margin {
+  margin-top: 10%;
+}
+
+}
+
+.center-block {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.landing-section {
+  width: 100%;
+  height: 100vh;
+  transition: background-color 0.8s ease-out;
+}
+
+
+.row-margin-bottom {
+  margin-bottom: 10px;
+}
+
+.content-text-title {
+  font-size: 20px;
+}
+
+.content-text {
+  color: white;
+  font-size: 15px;
+}
+
+@media (min-width: 768px) {
+
+.content-text {
+  font-size: 20px;
+}
+
+.content-text-title {
+  font-size: 30px;
+}
+
+}
+
+img.download-badge {
+  height: 30px;
+  width: auto;
+}
+
+@media (min-width: 992px) {
+
+img.download-badge {
+  height: 40px;
+  width: auto;
+}
+
+}

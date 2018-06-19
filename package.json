@@ -1,0 +1,27 @@
+{
+  "name": "loyts-landing",
+  "version": "0.1.0",
+  "homepage": "https://morojenoe.github.io/loyts-landing",
+  "private": true,
+  "dependencies": {
+    "gh-pages": "^1.1.0",
+    "muicss": "^0.9.39",
+    "prop-types": "^15.6.1",
+    "react": "^16.3.2",
+    "react-dom": "^16.3.2",
+    "react-scripts": "1.1.4",
+    "react-scroll": "^1.7.9"
+  },
+  "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  },
+  "devDependencies": {
+    "eslint": "^4.19.1",
+    "eslint-config-airbnb": "^16.1.0"
+  }
+}
