@@ -1,8 +1,10 @@
 import React, { Component } from 'react';
 import { scroller } from 'react-scroll';
+import { disableBodyScroll } from 'body-scroll-lock';
 import LinkSection from './link-section';
 import VerticalNavigationStepper from './vertical-vav-stepper/vertical-nav-stepper';
 import LandingSection from './landing-section/landing-section';
+
 
 import sections from './app-sections';
 import './App.css';
@@ -15,6 +17,10 @@ class App extends Component {
       slideId: 0,
       numberOfSlides: 6,
     };
+  }
+
+  componentDidMount() {
+    disableBodyScroll(this.sectionsDiv);
   }
 
   onKeyDown(event) {
@@ -37,6 +43,7 @@ class App extends Component {
     event.preventDefault();
     if (this.canProcessEvent()) {
       this.lastEventTime = Date.now();
+      console.log(event);
       if (event.detail < 0) {
         this.prevSlide();
       } else {
@@ -140,6 +147,7 @@ class App extends Component {
     return (
       <div
         className="sections"
+        ref={(sectionsDiv) => { this.sectionsDiv = sectionsDiv; }}
         onWheel={e => this.mouseEvent(e)}
         onKeyDown={e => this.onKeyDown(e)}
         onKeyUp={e => this.onKeyUp(e)}
