@@ -43,11 +43,33 @@ class App extends Component {
     event.preventDefault();
     if (this.canProcessEvent()) {
       this.lastEventTime = Date.now();
-      console.log(event);
       if (event.detail < 0) {
         this.prevSlide();
       } else {
         this.nextSlide();
+      }
+    }
+  }
+
+  onTouchStart(event) {
+    if (this.canProcessEvent()) {
+      const { pageY } = event.touches[0];
+      this.touchStart = pageY;
+    }
+  }
+
+  onTouchEnd(event) {
+    if (this.canProcessEvent()) {
+      this.lastEventTime = Date.now();
+      const { pageY } = event.changedTouches[0];
+      const diffY = pageY - this.touchStart;
+      if (Math.abs(diffY) > 50) {
+        console.log(pageY, this.touchStart);
+        if (diffY > 0) {
+          this.prevSlide();
+        } else {
+          this.nextSlide();
+        }
       }
     }
   }
@@ -152,6 +174,8 @@ class App extends Component {
         onKeyDown={e => this.onKeyDown(e)}
         onKeyUp={e => this.onKeyUp(e)}
         onScroll={e => this.onScroll(e)}
+        onTouchStart={e => this.onTouchStart(e)}
+        onTouchEnd={e => this.onTouchEnd(e)}
       >
         {sectionTags}
         {this.navigationBar()}
