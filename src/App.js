@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { scroller } from 'react-scroll';
 import { disableBodyScroll } from 'body-scroll-lock';
 import LinkSection from './link-section';
-import VerticalNavigationStepper from './vertical-vav-stepper/vertical-nav-stepper';
+import VerticalNavigationStepper from './vertical-nav-stepper/vertical-nav-stepper';
 import LandingSection from './landing-section/landing-section';
 
 
